@@ -22,8 +22,6 @@
 #include "Common/GL/GLInterface/EGLAndroid.h"
 #elif defined(__HAIKU__)
 #include "Common/GL/GLInterface/BGL.h"
-#else
-#error Platform doesnt have a GLInterface
 #endif
 
 std::unique_ptr<cInterfaceBase> HostGL_CreateGLInterface()
